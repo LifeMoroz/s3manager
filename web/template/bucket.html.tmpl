@@ -72,7 +72,7 @@
                         <!-- Dropdown Structure -->
                         <ul id="actions-dropdown-{{ $index }}" class="dropdown-content">
                             <li><a target="_blank" href="/api/buckets/{{ $.BucketName }}/objects/{{ $object.Key }}">Download</a></li>
-                            <li><a target="_blank" href="https://ea733148-56f9-46ce-8689-c20878f3808f.selstorage.ru/{{ $object.Key }}">Permanent Link</a></li>
+                            <li><a target="_blank" href="https://cdn.{{ $.BucketName }}.net/{{ $object.Key }}">Permanent Link</a></li>
                             <li><a onclick="handleOpenDownloadLinkModal({{ $object.Key }})">Download link</a></li>
                             {{- if $.AllowDelete }}
                             <li><a href="#" onclick="deleteObject({{ $.BucketName }}, {{ $object.Key }})">Delete</a></li>
